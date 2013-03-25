@@ -1,0 +1,11 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+    <include package="cornerstone.browser" />
+
+    <include file="profiles.zcml" />
+    
+    <include package=".browser" />
+    
+    <adapter for="*" factory=".disclaimer.DisclaimerText" />
+ 
+</configure> 
