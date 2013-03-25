@@ -22,7 +22,7 @@
     
         <input type="checkbox" name="_dc_accept" value="1" />
 
-        <span i18n:translate="">
+        <span i18n:translate="accept_terms_and_conditions">
           I Accept the Terms and Conditions to use this Page
         </span>
 
@@ -31,7 +31,7 @@
         <input type="submit"
                name="_dc_submitted"
                value="Continue"
-               i18n:attributes="value label_accept_disclaimer" />
+               i18n:attributes="value accept_disclaimer" />
       </div>
 
     </form>
