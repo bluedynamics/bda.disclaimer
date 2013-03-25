@@ -1,44 +1,40 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      lang="en"
-      i18n:domain="bda">
+      i18n:domain="bda.disclaimer">
 
 <tal:disclaimer define="dummy view/checkdisclaimer" />
 
-<head>
-  <title tal:content="view/pagetitle">Page Title</title>
-</head>
+  <head>
+    <title tal:content="view/pagetitle">Page Title</title>
+  </head>
 
-<body>
+  <body>
     
-  <form action=""
-        method="post">
-  
-    <div class="disclaimertext">
-      <tal:text replace="structure view/disclaimertext" />
-    </div>
-    
-    <div class="disclaimeraccept">
-    
-      <input type="checkbox"
-             name="_dc_accept"
-             value="1" />
-    
-      <span i18n:translate="">
-        I Accept the Terms and Conditions to use this Page
-      </span>
-      
-      <br />
-    
-      <input type="submit"
-             name="_dc_submitted"
-             value="Continue"
-             i18n:attributes="value label_accept_disclaimer" />
-    </div>
-  
-  </form>  
+    <form action="" method="post">
 
-</body>
+      <div class="disclaimertext">
+        <tal:text replace="structure view/disclaimertext" />
+      </div>
+
+      <div class="disclaimeraccept">
+    
+        <input type="checkbox" name="_dc_accept" value="1" />
+
+        <span i18n:translate="">
+          I Accept the Terms and Conditions to use this Page
+        </span>
+
+        <br />
+
+        <input type="submit"
+               name="_dc_submitted"
+               value="Continue"
+               i18n:attributes="value label_accept_disclaimer" />
+      </div>
+
+    </form>
+
+  </body>
 </html>
